@@ -17,7 +17,7 @@ jobs:
         APP_NAME: ${{ 'the-auth' }}
       run: |
         cd ./ASPNetCoreLabs/HerokuContainer
-        docker login --eoalcantara@gmail.com=_ --password=$HEROKU_API_KEY registry.heroku.com
+        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
         heroku container:push web -a $APP_NAME
         heroku container:release web -a $APP_NAME
  
