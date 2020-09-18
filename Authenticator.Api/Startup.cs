@@ -86,9 +86,9 @@ namespace Authenticator.Api
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "API de autenticação",
-                        Version = "v1",
-                        Description = "API para os serviços do App para beneficiários",
+                        Title = "Auth API.",
+                        Version = $"v1 - {DateTime.Now}",
+                        Description = "API para teste token",
                         Contact = new OpenApiContact
                         {
                             Name = "Teste",
